@@ -3,14 +3,12 @@
 
 #define SDA 3
 #define SCL 2
-#include <i2c.h>
-
+#include <bot.h>
 #include <termios.h>
 #include <fcntl.h>
 int main(void){
-
-
-
-
-return;
+initRobot();
+cam('H',0);
+cam('V',210);
+return 1;
 }

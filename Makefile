@@ -11,4 +11,4 @@ install: bot.o
 	install *.h /usr/include/
 
 robot:robot.c
-	$(CC) robot.c -lgpio -lbot -li2c -o robot
+	$(CC) robot.c -lbot -li2c -lgpio -o robot
